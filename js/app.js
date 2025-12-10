@@ -43,102 +43,25 @@ const Header = () => {
     );
 }
 
-const Hero = () => {
+const App = () => {
     return (
-        <section className="hero">
-            <div className="hero-content">
-                <h1>Shaping Smarter<br/>Governance for<br/>a Fast-Changing<br/>World</h1>
-            </div>
-        </section>
-    );
-}
-
-const DatamatixInfo = () => {
-    return (
-        <section className="datamatix-info">
-            <div className="datamatix-info-content">
-                <p>Datamatix Established Since: May 13, 1989 34 years 1 month 13 days 23 hours 40 minutes 35 seconds</p>
-                <button className="photo-gallery-button">Photo Gallery</button>
-            </div>
-        </section>
-    );
-}
-
-const Stats = () => {
-    return (
-        <section className="stats">
-            <div className="stat-item">
-                <i className="fas fa-calendar-alt"></i>
-                <span>37+</span>
-                <p>Years in Business</p>
-            </div>
-            <div className="stat-item">
-                <i className="fas fa-trophy"></i>
-                <span>2500+</span>
-                <p>Successful Events</p>
-            </div>
-            <div className="stat-item">
-                <i className="fas fa-users"></i>
-                <span>5000+</span>
-                <p>Satisfied Clients</p>
-            </div>
-            <div className="stat-item">
-                <i className="fas fa-broadcast-tower"></i>
-                <span>500+</span>
-                <p>Media Partners</p>
-            </div>
-            <div className="stat-item">
-                <i className="fas fa-handshake"></i>
-                <span>500+</span>
-                <p>Platinum Partners</p>
-            </div>
-            <div className="stat-item">
-                <i className="fas fa-heart"></i>
-                <span>300+</span>
-                <p>Other Supporters</p>
-            </div>
-        </section>
-    );
-}
-
-const CountdownSection = () => {
-    return (
-        <section className="countdown-section">
-            <div className="countdown">
-                <div>
-                    <span>75</span>
-                    <p>Days</p>
-                </div>
-                <div>
-                    <span>13</span>
-                    <p>Hours</p>
-                </div>
-                <div>
-                    <span>33</span>
-                    <p>Minutes</p>
-                </div>
-                <div>
-                    <span>58</span>
-                    <p>Seconds</p>
-                </div>
-                <div className="countdown-actions">
-                    <div className="event-date-container">
-                        <p>May 5-8, 2026 • Dubai, UAE</p>
-                    </div>
-                    <div className="event-buttons">
-                        <button className="register-btn">Register Now</button>
-                        <button className="partnership-btn">Partnership</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div>
+            <Header />
+            <DatamatixInfo />
+            <Stats />
+            <Events />
+            <Footer />
+        </div>
     );
 }
 
 const Events = () => {
     return (
         <section className="events">
-            <div className="events-intro-section">
+            <section className="events-intro-section">
+                <div className="events-intro-hero-content">
+                    <h1>Shaping Smarter<br/>Governance for<br/>a Fast-Changing<br/>World</h1>
+                </div>
                 <div className="events-intro-left-bar"></div>
                 <div className="events-intro-red-square">
                     <div className="calendar-clock-icon">
@@ -153,7 +76,7 @@ const Events = () => {
                     </h2>
                 </div>
                 <div className="events-intro-right-bar"></div>
-            </div>
+            </section>
             <CountdownSection />
             <div className="event-grid">
                 <div className="event-card">
@@ -317,7 +240,6 @@ const App = () => {
     return (
         <div>
             <Header />
-            <Hero />
             <DatamatixInfo />
             <Stats />
             <Events />

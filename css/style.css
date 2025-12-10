@@ -360,34 +360,7 @@ body {
     border-left: none; 
 }
 
-.hero {
-    background-image: url('../assets/Asset 10.png');
-    background-size: cover;
-    background-position: center;
-    margin: 0 90px;
-    height: 800px;
-    display: flex;
-    align-items: center;
-    animation: fadeIn 1s ease-out;
-}
 
-.hero-content {
-    padding: 60px 0px; 
-    color: #fff;
-    max-width: 500px; 
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 90px; 
-}
-
-.hero-content h1 {
-    font-size: 48px;
-    margin: 0;
-    line-height: 1.2;
-    animation: popIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s backwards;
-}
 
 .stats {
     display: flex;
@@ -780,10 +753,6 @@ body {
     box-shadow: 0 8px 20px rgba(183, 31, 37, 0.4);
 }
 
-.submit-btn:hover::after {
-    right: 100%;
-}
-
 .submit-btn:active {
     transform: translateY(-1px);
 }
@@ -915,12 +884,33 @@ body {
     left: 100%;
 }
 
-.events-intro-section {
+/* New/Adjusted Styles for .events-intro-section and .events-intro-hero-content */
+.events-intro-hero-content {
+    background-image: url('../assets/Asset 10.png');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
+    color: #fff;
+    padding: 20px 40px;
+    flex: 2;
+    height: 100%;
+}
+
+.events-intro-hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+    line-height: 1.2;
+    animation: popIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s backwards;
+}
+
+.events-intro-section {
+    display: flex;
+    align-items: stretch; /* Stretch items to fill the height */
     margin: 20px 90px;
-    height: 120px;
+    height: 350px; /* Increased height to accommodate the text */
     position: relative;
+    background-color: #b71f25; /* Red background for the whole section */
 }
 
 .events-intro-left-bar {
@@ -1047,10 +1037,6 @@ body {
     line-height: 1;
     color: #fff;
 }
-
-
-
-
 
 /* Tablet & Medium Devices (768px and down) */
 @media (max-width: 768px) {
@@ -1312,24 +1298,37 @@ body {
         padding-bottom: 6px;
     }
 
+    /* Mobile styles for events-intro-section and events-intro-hero-content */
     .events-intro-section {
-        flex-direction: row;
-        padding: 0;
+        flex-direction: column; /* Stack elements vertically on mobile */
+        height: auto; /* Adjust height dynamically */
         margin: 20px 20px;
         width: calc(100% - 40px);
-        height: 100px;
-        align-items: stretch;
+        background-color: transparent; /* Remove red background for the whole section on mobile */
+    }
+
+    .events-intro-hero-content {
+        background-image: none; /* No background image on mobile */
+        padding: 20px 0;
+        flex: none;
+        height: auto;
+        color: #000; /* Adjust text color for mobile background */
+    }
+
+    .events-intro-hero-content h1 {
+        font-size: 28px; /* Smaller font size for mobile */
+        text-align: center;
     }
 
     .events-intro-left-bar,
     .events-intro-right-bar {
-        display: none;
+        display: none; /* Hide bars on mobile */
     }
 
     .events-intro-red-square {
-        width: 100px;
+        width: 100%;
         height: 100px;
-        min-width: 100px;
+        min-width: unset;
         margin-bottom: 0;
         align-self: stretch;
         flex-shrink: 0;
@@ -1354,7 +1353,7 @@ body {
         padding: 15px 20px;
         width: auto;
         flex: 1;
-        height: 100%;
+        height: auto;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -2032,5 +2031,25 @@ body {
     .countdown > div:hover span {
         transform: scale(1.08);
         text-shadow: 0 0 15px rgba(183, 31, 37, 0.6);
+    }
+}
+
+/* Large screen styles for .stats */
+@media (min-width: 1025px) {
+    .stats {
+        flex-wrap: nowrap; /* Ensure stats stay in one line */
+        justify-content: center; /* Center the items if they don't fill the space */
+        gap: 20px; /* Add some space between stat items */
+    }
+
+    .stat-item {
+        flex-basis: 0; /* Allow flex items to shrink, grow from a 0 base */
+        flex-grow: 1; /* Allow all items to grow equally */
+        max-width: 16%; /* Limit max width to prevent items from getting too wide in huge screens */
+        border-right: 2px solid #e5e7eb;
+    }
+
+    .stat-item:last-child {
+        border-right: none;
     }
 }
