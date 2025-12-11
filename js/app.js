@@ -47,7 +47,7 @@ const Hero = () => {
     return (
         <section className="hero">
             <div className="hero-content">
-                <h1>Shaping Smarter<br/>Governance for<br/>a Fast-Changing<br/>World</h1>
+                <h1>Shaping Smarter<br/>Governance for a Fast-Changing<br/>World</h1>
             </div>
         </section>
     );
