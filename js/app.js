@@ -135,65 +135,69 @@ const CountdownSection = () => {
     );
 }
 
+const EventsIntro = () => {
+    return (
+        <div className="events-intro-section">
+            <div className="events-intro-left-bar"></div>
+            <div className="events-intro-red-square">
+                <div className="calendar-clock-icon">
+                    <div className="calendar-icon-base"></div>
+                    <div className="clock-icon-overlay"></div>
+                </div>
+            </div>
+            <div className="events-intro-content">
+                <h2 className="events-schedule-title">
+                    <span className="events-line-small">• The World Governments Efficiency Week in Dubai</span>
+                    <span className="events-line-big">EVENTS SCEHDULE</span>
+                </h2>
+            </div>
+            <div className="events-intro-right-bar"></div>
+        </div>
+    );
+}
+
 const Events = () => {
     return (
         <section className="events">
-            <div className="events-intro-section">
-                <div className="events-intro-left-bar"></div>
-                <div className="events-intro-red-square">
-                    <div className="calendar-clock-icon">
-                        <div className="calendar-icon-base"></div>
-                        <div className="clock-icon-overlay"></div>
-                    </div>
-                </div>
-                <div className="events-intro-content">
-                    <h2 className="events-schedule-title">
-                        <span className="events-line-small">• The World Governments Efficiency Week in Dubai</span>
-                        <span className="events-line-big">EVENTS SCEHDULE</span>
-                    </h2>
-                </div>
-                <div className="events-intro-right-bar"></div>
-            </div>
-            <CountdownSection />
             <div className="event-grid">
                 <div className="event-card">
-                    <img src="assets/Asset 19.png" alt="Global Leadership Summit" />
-                    <h3>GLOBAL<br/>LEADERSHIP<br/>SUMMIT</h3>
+                    <img src="assets/Asset 15.png" alt="The World Governments Leaders Summit" />
+                    <h3>THE WORLD<br/>GOVERNMENTS<br/>LEADERS SUMMIT</h3>
                     <p>5 May 2026, Dubai - UAE</p>
                 </div>
                 <div className="event-card">
-                    <img src="assets/Asset 18.png" alt="Innovation & Future Technologies" />
-                    <h3>INNOVATION<br/>AND FUTURE<br/>TECHNOLOGIES</h3>
+                    <img src="assets/Asset 16.png" alt="The Future Summit" />
+                    <h3>THE FUTURE<br/>SUMMIT</h3>
                     <p>5 May 2026, Dubai - UAE</p>
                 </div>
                 <div className="event-card">
-                    <img src="assets/Asset 12.png" alt="Government Efficiency Conference" />
-                    <h3>GOVERNMENT<br/>EFFICIENCY<br/>CONFERENCE</h3>
+                    <img src="assets/Asset 17.png" alt="The World Governments Efficiency Summit" />
+                    <h3>THE WORLD<br/>GOVERNMENTS<br/>EFFICIENCY SUMMIT</h3>
                     <p>5 May 2026, Dubai - UAE</p>
                 </div>
                 <div className="event-card">
-                    <img src="assets/Asset 13.png" alt="City Governance & Urban Development" />
-                    <h3>CITY GOVERNANCE<br/>AND URBAN<br/>DEVELOPMENT</h3>
+                    <img src="assets/Asset 12.png" alt="12th World Governors and Mayors Congress" />
+                    <h3>12TH WORLD<br/>GOVERNORS AND<br/>MAYORS CONGRESS</h3>
                     <p>5 May 2026, Dubai - UAE</p>
                 </div>
                 <div className="event-card">
-                    <img src="assets/Asset 14.png" alt="Streamlining Public Sector Bureaucracy" />
-                    <h3>STREAMLINING<br/>PUBLIC SECTOR<br/>BUREAUCRACY</h3>
+                    <img src="assets/Asset 13.png" alt="The Future of Bureaucracy Summit" />
+                    <h3>THE FUTURE OF<br/>BUREAUCRACY<br/>SUMMIT</h3>
                     <p>5 May 2026, Dubai - UAE</p>
                 </div>
                 <div className="event-card">
-                    <img src="assets/Asset 15.png" alt="Modern Management Strategies" />
-                    <h3>MODERN<br/>MANAGEMENT<br/>STRATEGIES</h3>
+                    <img src="assets/Asset 14.png" alt="The World Governments Modern Management Summit" />
+                    <h3>THE WORLD<br/>GOVERNMENTS<br/>MODERN MANAGEMENT<br/>SUMMIT</h3>
                     <p>5 May 2026, Dubai - UAE</p>
                 </div>
                 <div className="event-card">
-                    <img src="assets/Asset 16.png" alt="Human Capital Development for Government" />
-                    <h3>HUMAN CAPITAL<br/>DEVELOPMENT<br/>FOR GOVT.</h3>
+                    <img src="assets/Asset 18.png" alt="The World Governments Human Capital Summit" />
+                    <h3>THE WORLD<br/>GOVERNMENTS<br/>HUMAN CAPITAL SUMMIT</h3>
                     <p>5 May 2026, Dubai - UAE</p>
                 </div>
                 <div className="event-card">
-                    <img src="assets/Asset 17.png" alt="AI in Government and Cities" />
-                    <h3>AI IN<br/>GOVERNMENT<br/>AND CITIES</h3>
+                    <img src="assets/Asset 19.png" alt="30th GCC AI, Governments and Cities Conference" />
+                    <h3>30TH GCC<br/>AI, GOVERNMENTS AND<br/>CITIES CONFERENCE</h3>
                     <p>5 May 2026, Dubai - UAE</p>
                 </div>
             </div>
@@ -319,6 +323,8 @@ const App = () => {
             <Header />
             <Hero />
             <DatamatixInfo />
+            <CountdownSection />
+            <EventsIntro />
             <Stats />
             <Events />
             <Footer />

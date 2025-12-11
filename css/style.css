@@ -1,221 +1,7 @@
-@font-face {
-    font-family: 'BruumFY';
-    src: url('../assets/BruumFY-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BruumFY';
-    src: url('../assets/BruumFY-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BruumFY';
-    src: url('../assets/BruumFY-Light.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes scaleUp {
-    from {
-        transform: scale(0.95);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.8;
-    }
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-@keyframes glow {
-    0%, 100% {
-        box-shadow: 0 0 5px rgba(183, 31, 37, 0.5);
-    }
-    50% {
-        box-shadow: 0 0 20px rgba(183, 31, 37, 0.8);
-    }
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: -1000px 0;
-    }
-    100% {
-        background-position: 1000px 0;
-    }
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-}
-
-@keyframes popIn {
-    0% {
-        transform: scale(0) rotateZ(-10deg);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.1) rotateZ(5deg);
-    }
-    100% {
-        transform: scale(1) rotateZ(0deg);
-        opacity: 1;
-    }
-}
-
-@keyframes tilt {
-    0%, 100% {
-        transform: skewY(-0.5deg);
-    }
-    50% {
-        transform: skewY(0.5deg);
-    }
-}
-
-@keyframes wiggle {
-    0%, 100% {
-        transform: rotateZ(0deg);
-    }
-    15% {
-        transform: rotateZ(-5deg);
-    }
-    30% {
-        transform: rotateZ(5deg);
-    }
-    45% {
-        transform: rotateZ(-5deg);
-    }
-    60% {
-        transform: rotateZ(5deg);
-    }
-    75% {
-        transform: rotateZ(-2deg);
-    }
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes blinkGlow {
-    0%, 100% {
-        text-shadow: 0 0 0px rgba(183, 31, 37, 0);
-    }
-    50% {
-        text-shadow: 0 0 20px rgba(183, 31, 37, 1);
-    }
-}
-
-@keyframes slideInBottomLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px) translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0) translateY(0);
-    }
-}
-
-@keyframes zoomIn {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 body {
-    font-family: 'BruumFY', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -232,7 +18,6 @@ body {
 
 .header {
     padding: 40px 90px;
-    animation: slideInLeft 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .header-top {
@@ -250,7 +35,6 @@ body {
     width: 100px;
     height: 100px;
     margin-right: 20px;
-    animation: float 3s ease-in-out infinite;
 }
 
 .logo-text {
@@ -261,20 +45,17 @@ body {
 .logo-text span:nth-child(1) {
     font-size: 28px;
     font-weight: bold;
-    animation: slideInLeft 0.8s ease-out;
 }
 
 .logo-text span:nth-child(2) {
     font-size: 28px;
     font-weight: bold;
-    animation: slideInLeft 0.8s ease-out 0.1s backwards;
 }
 
 .logo-text span:nth-child(3) {
     font-size: 28px;
     font-weight: bold;
-    color: rgb(176, 36, 36);
-    animation: slideInLeft 0.8s ease-out 0.2s backwards;
+    color: #B20407;
 }
 
 .header-info {
@@ -284,16 +65,14 @@ body {
 
 .header-date {
     font-size: 20px; 
-    border-bottom: 2px solid #b72025; 
+    border-bottom: 2px solid #B20407; 
     padding-bottom: 16px;
-    animation: slideInRight 0.8s ease-out;
 }
 
 .calendar-icon {
     width: 60px;
     height: 60px;
     margin-left: 20px;
-    animation: bounce 2s ease-in-out infinite, wiggle 3s ease-in-out 1s infinite;
 }
 
 .header-bottom {
@@ -342,13 +121,13 @@ body {
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: #b71f25;
+    background-color: #B20407;
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
 
 .nav a:hover {
-    color: #b71f25;
+    color: #B20407;
     font-size: 17px;
 }
 
@@ -368,7 +147,6 @@ body {
     height: 800px;
     display: flex;
     align-items: center;
-    animation: fadeIn 1s ease-out;
     position: relative;
 }
 
@@ -379,7 +157,7 @@ body {
     top: 0;
     bottom: 0;
     width: 510px;
-    background-color: #b20408;
+    background-color: #B20407;
     z-index: 1;
 }
 
@@ -402,7 +180,6 @@ body {
     line-height: 1.25;
     font-weight: 900;
     letter-spacing: -1px;
-    animation: popIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s backwards;
 }
 
 .stats {
@@ -420,7 +197,6 @@ body {
     margin: 20px 0; 
     padding: 0 40px 0 20px; 
     border-right: 2px solid #e5e7eb;
-    animation: slideInBottomLeft 0.8s ease-out;
     transition: all 0.3s ease;
     cursor: pointer;
     perspective: 1000px;
@@ -442,26 +218,23 @@ body {
     height: 48px;
     margin-bottom: 10px;
     color: #9ca3af;
-    animation: bounce 2s ease-in-out infinite;
     transition: color 0.3s ease, transform 0.2s ease;
     text-align: center;
 }
 
 .stat-item:hover i {
-    color: #b71f25;
+    color: #B20407;
 }
 
 .stat-item span {
     font-size: 36px;
     font-weight: bold;
-    color: #b71f25;
-    animation: pulse 2s ease-in-out infinite;
+    color: #B20407;
     transition: text-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .stat-item:hover span {
-    animation: blinkGlow 1.5s ease-in-out infinite;
 }
 
 .stat-item p {
@@ -511,7 +284,7 @@ body {
 .countdown span {
     font-size: 88px;
     font-weight: 800;
-    color: #b71f25;
+    color: #B20407;
     display: inline-block;
     line-height: 1;
     transition: transform 0.25s ease, text-shadow 0.3s ease;
@@ -523,9 +296,10 @@ body {
 }
 
 .countdown p {
-    font-size: 20px;
+    font-size: 24px;
     margin: 8px 0 0 0;
     color: #333;
+    font-weight: bold;
 }
 
 .event-date-container p {
@@ -559,7 +333,7 @@ body {
 }
 
 .register-btn {
-    background-color: #b71f25;
+    background-color: #B20407;
 }
 
 .partnership-btn {
@@ -579,7 +353,6 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    animation: fadeIn 0.6s ease-out;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 8px;
     position: relative;
@@ -611,7 +384,7 @@ body {
     padding-left: 12px;
     color: #000;
     line-height: 1.4;
-    border-left: 8px solid #b71f25;
+    border-left: 8px solid #ec2128;
     word-break: break-word;
 }
 
@@ -628,7 +401,7 @@ body {
     color: #666;
     margin: 0;
     padding-left: 12px;
-    border-left: 8px solid #da252b;
+    border-left: 8px solid #ec2128;
     padding-top: 8px;
     padding-bottom: 8px;
     margin-top: 0;
@@ -641,7 +414,7 @@ body {
 }
 
 .footer-top {
-    background-color: #b71f25;
+    background-color: #B20407;
     display: flex;
     align-items: center;
     padding: 20px 90px;
@@ -693,7 +466,7 @@ body {
 .footer-col h4 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #b71f25;
+    color: #B20407;
     font-weight: bold;
 }
 
@@ -724,12 +497,12 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #b71f25;
+    background-color: #B20407;
     transition: width 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #b71f25;
+    color: #B20407;
     transform: translateX(5px);
 }
 
@@ -745,7 +518,7 @@ body {
 .footer-subscribe h4 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #b71f25;
+    color: #B20407;
     font-weight: bold;
 }
 
@@ -765,7 +538,7 @@ body {
 }
 
 .submit-btn {
-    background-color: #b71f25;
+    background-color: #B20407;
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -881,6 +654,7 @@ body {
 
 .datamatix-info-content {
     padding: 14px;
+    margin: 0 50px;
     background-color: #f0f0f042; 
     display: flex;
     flex-direction: row;
@@ -896,7 +670,7 @@ body {
 }
 
 .photo-gallery-button {
-    background-color: #bc1e1e;
+    background-color: #B20407;
     color: #fff;
     padding: 16px 88px;
     border: none;
@@ -922,7 +696,7 @@ body {
 }
 
 .photo-gallery-button:hover {
-    background-color: #9a1515;
+    background-color: #8c0306;
     transform: scale(1.08) translateY(-4px);
     box-shadow: 0 10px 28px rgba(188, 30, 30, 0.4);
 }
@@ -957,7 +731,7 @@ body {
     width: 120px;
     height: 120px;
     min-width: 120px;
-    background-color: #b71f25;
+    background-color: #B20407;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -976,7 +750,7 @@ body {
     border: 2.5px solid #fff;
     border-radius: 3px;
     position: relative;
-    background: #b71f25;
+    background: #B20407;
 }
 
 .calendar-icon-base::before {
@@ -1010,7 +784,7 @@ body {
     height: 28px;
     border: 2.5px solid #fff;
     border-radius: 50%;
-    background: #b71f25;
+    background: #B20407;
 }
 
 .clock-icon-overlay::before {
@@ -1041,26 +815,26 @@ body {
     margin: 0;
     text-align: left;
     line-height: 1.2;
-    font-family: 'BruumFY', sans-serif;
 }
 
 .events-schedule-title .events-line-small {
     display: block;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 700;
     color: #fff;
     margin-top: 20px;
     margin-bottom: 6px;
-    line-height: 1.4;
+    line-height: 1;
 }
 
 .events-schedule-title .events-line-big {
     display: block;
-    font-size: 48px;
-    font-weight: 900;
-    letter-spacing: 0.5px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
     text-transform: uppercase;
     line-height: 1;
+    margin-bottom: 20pxpls help;
     color: #fff;
 }
 
@@ -1079,14 +853,12 @@ body {
 
     .header {
         padding: 25px 30px;
-        animation: slideInLeft 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Reduced duration */
     }
 
     .logo {
         width: 70px;
         height: 70px;
         margin-right: 15px;
-        animation: float 2s ease-in-out infinite; /* Reduced duration */
     }
 
     .logo-text {
@@ -1095,30 +867,25 @@ body {
 
     .logo-text span:nth-child(1) {
         font-size: 18px;
-        animation: slideInLeft 0.4s ease-out; /* Reduced duration */
     }
 
     .logo-text span:nth-child(2) {
         font-size: 18px;
-        animation: slideInLeft 0.4s ease-out 0.05s backwards; /* Reduced duration and delay */
     }
 
     .logo-text span:nth-child(3) {
         font-size: 18px;
-        animation: slideInLeft 0.4s ease-out 0.1s backwards; /* Reduced duration and delay */
     }
 
     .header-date {
         font-size: 14px;
         padding-bottom: 10px;
-        animation: slideInRight 0.4s ease-out; /* Reduced duration */
     }
 
     .calendar-icon {
         width: 45px;
         height: 45px;
         margin-left: 15px;
-        animation: bounce 1.5s ease-in-out infinite, wiggle 2s ease-in-out 0.5s infinite; /* Reduced durations */
     }
 
     .header-bottom {
@@ -1168,7 +935,6 @@ body {
         margin: 0 30px;
         min-height: 50vh;
         height: auto;
-        animation: fadeIn 0.5s ease-out; /* Reduced duration */
     }
 
     .hero::before {
@@ -1184,7 +950,6 @@ body {
 
     .hero-content h1 {
         font-size: 32px;
-        animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s backwards; /* Reduced duration and delay */
     }
 
     .countdown-section {
@@ -1209,7 +974,6 @@ body {
         width: 100%;
         border-right: none;
         border-bottom: 2px solid #e5e7eb;
-        animation: slideInBottomLeft 0.4s ease-out;
         transition: all 0.2s ease;
     }
 
@@ -1257,8 +1021,9 @@ body {
     }
 
     .countdown p {
-        font-size: 16px;
+        font-size: 20px;
         margin-top: 8px;
+        font-weight: bold;
     }
 
     .event-date-container {
@@ -1304,7 +1069,6 @@ body {
 
     .event-card {
         border-radius: 6px;
-        animation: fadeIn 0.5s ease-out;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -1508,7 +1272,6 @@ body {
         width: 60px;
         height: 60px;
         margin-right: 10px;
-        animation: float 1.5s ease-in-out infinite; /* Reduced duration */
     }
 
     .logo-text span:nth-child(1),
@@ -1551,7 +1314,7 @@ body {
         padding: 12px 5px;
         font-size: 12px;
         font-weight: bold;
-        color: #b71f25;
+        color: #B20407;
         border-bottom: 2px solid #e5e7eb;
         margin-bottom: 5px;
     }
@@ -1568,7 +1331,6 @@ body {
         margin: 0;
         min-height: 40vh;
         height: auto;
-        animation: fadeIn 0.4s ease-out; /* Reduced duration */
     }
 
     .hero-content {
@@ -1581,7 +1343,6 @@ body {
     .hero-content h1 {
         font-size: 24px;
         line-height: 1.3;
-        animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.05s backwards; /* Reduced duration and delay */
     }
 
     .countdown-section {
@@ -1603,7 +1364,6 @@ body {
         padding: 18px 15px;
         margin: 0;
         width: 100%;
-        animation: slideInBottomLeft 0.3s ease-out;
         transition: all 0.15s ease;
     }
 
@@ -1611,14 +1371,12 @@ body {
         font-size: 24px;
         width: 40px;
         height: 40px;
-        animation: bounce 0.8s ease-in-out infinite;
         transition: color 0.15s ease, transform 0.1s ease;
     }
 
     .stat-item span {
         font-size: 28px;
         margin: 6px 0;
-        animation: pulse 0.8s ease-in-out infinite;
         transition: text-shadow 0.15s ease;
     }
 
@@ -1642,8 +1400,9 @@ body {
     }
 
     .countdown p {
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 6px;
+        font-weight: bold;
     }
 
     .event-date-container {
@@ -1682,7 +1441,6 @@ body {
 
     .event-card {
         padding: 15px;
-        animation: fadeIn 0.4s ease-out;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -1905,6 +1663,12 @@ body {
         font-size: 14px;
     }
 
+    .countdown p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+
     .hero {
         min-height: 35vh; /* Further reduced min-height */
         height: auto; /* Remove fixed height */
@@ -2010,18 +1774,7 @@ body {
     }
 }
 
-/* Mobile-first animations optimization */
-@media (max-width: 768px) {
-    /* Removed: * { animation-duration: 0.4s !important; } */
 
-    .header {
-        animation: slideInLeft 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    .event-card {
-        animation: fadeIn 0.5s ease-out;
-    }
-}
 
 /* Prevent layout shift on mobile */
 @media (max-width: 480px) {
